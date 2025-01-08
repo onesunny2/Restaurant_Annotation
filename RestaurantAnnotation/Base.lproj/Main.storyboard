@@ -27,21 +27,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="전체"/>
+                                                <connections>
+                                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pVh-UU-Mvl"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cao-93-zI5">
                                                 <rect key="frame" x="96.666666666666686" y="0.0" width="79" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="분식"/>
+                                                <connections>
+                                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UoZ-Vp-xwP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfJ-X0-mVR">
                                                 <rect key="frame" x="193.66666666666666" y="0.0" width="78.666666666666657" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="양식"/>
+                                                <connections>
+                                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NQr-8r-y0T"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcR-Pu-3PF">
                                                 <rect key="frame" x="290.33333333333331" y="0.0" width="78.666666666666686" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="카페"/>
+                                                <connections>
+                                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EbY-fV-Gxt"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -52,21 +64,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="81" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="한식"/>
+                                                <connections>
+                                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HeS-Og-Q1G"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIr-Z1-J8W">
                                                 <rect key="frame" x="96" y="0.0" width="81" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="샐러드"/>
+                                                <connections>
+                                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIV-XW-KEO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTr-Fg-4jC">
                                                 <rect key="frame" x="192" y="0.0" width="81" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="일식"/>
+                                                <connections>
+                                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qcj-ta-61N"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vg0-bP-5ag">
                                                 <rect key="frame" x="288" y="0.0" width="81" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="중식"/>
+                                                <connections>
+                                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3la-mr-gwU"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -76,11 +100,21 @@
                                 <rect key="frame" x="0.0" y="167.66666666666669" width="393" height="650.33333333333326"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MI-lS-ak4">
+                                <rect key="frame" x="302" y="768.66666666666663" width="75" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedMenuBar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p7V-vF-Kyv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KPN-i0-z0V" secondAttribute="trailing" id="1Mp-dv-yAW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0MI-lS-ak4" secondAttribute="bottom" constant="15" id="7zr-cq-uVG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0MI-lS-ak4" secondAttribute="trailing" constant="16" id="ANj-dC-kzi"/>
                             <constraint firstItem="AIf-6L-flD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="AVi-Qj-Sze"/>
                             <constraint firstItem="KPN-i0-z0V" firstAttribute="top" secondItem="AIf-6L-flD" secondAttribute="bottom" constant="20" id="EId-Yk-btI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AIf-6L-flD" secondAttribute="trailing" constant="12" id="Tku-Zm-Yfy"/>
@@ -91,6 +125,7 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="KPN-i0-z0V" id="5S1-d7-tTx"/>
+                        <outlet property="sheetButton" destination="0MI-lS-ak4" id="fRb-R6-H6E"/>
                         <outletCollection property="categoryButtons" destination="A6Y-fx-GMH" collectionClass="NSMutableArray" id="jW8-tZ-yKq"/>
                         <outletCollection property="categoryButtons" destination="cao-93-zI5" collectionClass="NSMutableArray" id="8Qg-oG-Ob6"/>
                         <outletCollection property="categoryButtons" destination="nfJ-X0-mVR" collectionClass="NSMutableArray" id="7gQ-hh-Qbr"/>
