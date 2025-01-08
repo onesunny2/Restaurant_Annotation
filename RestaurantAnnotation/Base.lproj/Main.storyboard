@@ -1,24 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RestaurantAnnotation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AIf-6L-flD">
+                                <rect key="frame" x="12" y="71" width="369" height="76.666666666666686"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="NW3-6C-T0S">
+                                        <rect key="frame" x="0.0" y="0.0" width="369" height="34.333333333333336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6Y-fx-GMH">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="전체"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cao-93-zI5">
+                                                <rect key="frame" x="96.666666666666686" y="0.0" width="79" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="분식"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfJ-X0-mVR">
+                                                <rect key="frame" x="193.66666666666666" y="0.0" width="78.666666666666657" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="양식"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcR-Pu-3PF">
+                                                <rect key="frame" x="290.33333333333331" y="0.0" width="78.666666666666686" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="카페"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cRl-CF-EGt">
+                                        <rect key="frame" x="0.0" y="42.333333333333329" width="369" height="34.333333333333329"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2e-54-htj">
+                                                <rect key="frame" x="0.0" y="0.0" width="81" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="한식"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIr-Z1-J8W">
+                                                <rect key="frame" x="96" y="0.0" width="81" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="샐러드"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTr-Fg-4jC">
+                                                <rect key="frame" x="192" y="0.0" width="81" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="일식"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vg0-bP-5ag">
+                                                <rect key="frame" x="288" y="0.0" width="81" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="중식"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPN-i0-z0V">
+                                <rect key="frame" x="0.0" y="167.66666666666669" width="393" height="650.33333333333326"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KPN-i0-z0V" secondAttribute="trailing" id="1Mp-dv-yAW"/>
+                            <constraint firstItem="AIf-6L-flD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="AVi-Qj-Sze"/>
+                            <constraint firstItem="KPN-i0-z0V" firstAttribute="top" secondItem="AIf-6L-flD" secondAttribute="bottom" constant="20" id="EId-Yk-btI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AIf-6L-flD" secondAttribute="trailing" constant="12" id="Tku-Zm-Yfy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KPN-i0-z0V" secondAttribute="bottom" id="iaS-94-u4T"/>
+                            <constraint firstItem="AIf-6L-flD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="pqS-MU-YxJ"/>
+                            <constraint firstItem="KPN-i0-z0V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rdF-n0-vsy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="KPN-i0-z0V" id="5S1-d7-tTx"/>
+                        <outletCollection property="categoryButtons" destination="A6Y-fx-GMH" collectionClass="NSMutableArray" id="jW8-tZ-yKq"/>
+                        <outletCollection property="categoryButtons" destination="cao-93-zI5" collectionClass="NSMutableArray" id="8Qg-oG-Ob6"/>
+                        <outletCollection property="categoryButtons" destination="nfJ-X0-mVR" collectionClass="NSMutableArray" id="7gQ-hh-Qbr"/>
+                        <outletCollection property="categoryButtons" destination="mcR-Pu-3PF" collectionClass="NSMutableArray" id="dcJ-IF-Ji7"/>
+                        <outletCollection property="categoryButtons" destination="y2e-54-htj" collectionClass="NSMutableArray" id="Z7o-W0-T7i"/>
+                        <outletCollection property="categoryButtons" destination="cIr-Z1-J8W" collectionClass="NSMutableArray" id="Ggl-Oa-RQN"/>
+                        <outletCollection property="categoryButtons" destination="HTr-Fg-4jC" collectionClass="NSMutableArray" id="65p-kn-hFx"/>
+                        <outletCollection property="categoryButtons" destination="vg0-bP-5ag" collectionClass="NSMutableArray" id="pFT-3P-qDA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="169" y="-14"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
