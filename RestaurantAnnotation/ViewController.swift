@@ -82,7 +82,29 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
     
     @IBAction func tappedMenuBar(_ sender: UIButton) {
+        actionSheet()
+    }
+    
+    func actionSheet() {
         
+        let message = UIAlertController(title: "카테고리", message: "찾고싶은 카테고리를 눌러주세요:>", preferredStyle: .actionSheet)
+        
+        let check = UIAlertAction(title: "닫기", style: .cancel)
+        
+        // 클로저, self, capturelist
+        for index in 0...buttonName.count - 1 {
+            let action = UIAlertAction(title: buttonName[index], style: .default) { [self] _ in
+                self.mapView.removeAnnotations(self.annotations)
+                self.annotations.removeAll()
+                
+                self.configureMapView(self.buttonName[index])
+            }
+            message.addAction(action)
+        }
+        
+        message.addAction(check)
+        
+        present(message, animated: true)
     }
 }
 
