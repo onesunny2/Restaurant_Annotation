@@ -48,10 +48,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
     
     func configureMapView(_ name: String) {
-        
+
         filteringList = (name == "전체") ? restaurants.restaurantArray : restaurants.restaurantArray.filter { $0.category == name }
-        
-        print(filteringList)
         
         let center = CLLocationCoordinate2D(latitude: maplocation.latiAverage, longitude: maplocation.longiAverage)
 
